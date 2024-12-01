@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+
+    <style>
+      .cartas {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+      }
+      .carta img {
+        width: 200px;
+        height: 250px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-light text-center">
+    <div class="container mt-4">
+      <h1 class="mb-4 text-primary">Blackjack</h1>
+
+      <div id="puntosBanca" class="alert alert-info">Puntos banca: 0</div>
+      <div class="cartas" id="cartasBanca"></div>
+
+      <div id="puntosJugador" class="alert alert-success">
+        Puntos jugador: 0
+      </div>
+      <div class="cartas" id="cartasJugador"></div>
+
+      <div class="botones mt-3">
+        <button id="pedirCarta" class="btn btn-primary m-2">Pedir carta</button>
+        <button id="plantarse" class="btn btn-danger m-2">Plantarse</button>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./utils/js/carta.js"></script>
+    <script src="./utils/js/objetos_cartas.js"></script>
+    <script src="./utils/js/juego.js"></script>
+  </body>
+</html>
